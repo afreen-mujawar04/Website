@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Fashion</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+
+        .carousel {
+            background: linear-gradient(to right, #92dbff, #fad0c4);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+
+            .carousel-item img {
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .gallery img {
+                height: 180px;
+            }
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">👗 Queen Fashion</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="fashionCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" class="d-block w-100 img-fluid"
+                    alt="Fashion 1">
+                <div class="carousel-caption">
+                    <h2>Latest Fashion Collection</h2>
+                    <p>Discover trendy styles for every occasion.</p>
+                </div>
+            </div>
+
+           
+           <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="1">
+        </button>
+
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Elegant Fashion For Every Woman</h1>
+                <p class="lead">
+                    Discover trendy dresses, stylish tops, beautiful kurtis, and more...
+                </p>
+                <a href="#gallery" class="btn btn-dark btn-lg mt-3">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="container py-5">
+            <h2 class="section-title">About Queen Fashion</h2>
+
+            <div class="card shadow p-4">
+                <p class="text-center">
+                    Queen Fashion brings stylish and comfortable clothing for women.
+                    Explore our latest collection of dresses, sarees, kurtis, and accessories
+                    designed for every occasion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="container py-5">
+            <h2 class="section-title">Our Collection</h2>
+
+            <div class="row g-4 gallery">
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://plus.unsplash.com/premium_photo-1675186049366-64a655f8f537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdvbWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>coat</h5>
+                            <p>Stay classy, stay warm in every season 🧥</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://images.meesho.com/images/products/619582010/byktl_512.webp?width=512"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>Short Kurti</h5>
+                            <p>Traditional beauty with a modern touch.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tZW4lMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>Baggy Jeans</h5>
+                            <p>stylish baggy jeans that comfort everyday.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://www.anantexports.in/cdn/shop/files/IMG-20240509-WA0110.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>Party Wear Gown</h5>
+                            <p>Perfect choice for special occasions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://images.unsplash.com/photo-1660067262025-271603ac1283?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdvbWVuJTIwdG9wfGVufDB8fDB8fHww"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>Stylish Tops</h5>
+                            <p>Trendy fashion for everyday elegance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://images.jdmagicbox.com/quickquotes/images_main/women-s-ethnic-wear-q50h11c1.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5>Ethnic Collection</h5>
+                            <p>Celebrate culture with beautiful outfits.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register" class="container py-5">
+            <h2 class="section-title">Join Our Fashion Community</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <form class="card shadow p-4">
+
+                        <input type="text" class="form-control mb-3" placeholder="Enter Name">
+
+                        <input type="email" class="form-control mb-3" placeholder="Enter Email">
+
+                        <input type="tel" class="form-control mb-3" placeholder="Enter Phone Number">
+
+                        <select class="form-select mb-3">
+                            <option>Select Category</option>
+                            <option>Dresses</option>
+                            <option>Baggy Jeans</option>
+                            <option>Kurtis</option>
+                            <option>stylish top</option>
+                        </select>
+
+                        <button type="submit" class="btn btn-danger">
+                            Register Now
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section id="location" class="container py-5">
+            <h2 class="section-title">Visit Us</h2>
+
+            <div class="card shadow p-4 text-center">
+                <h5>👗 Queen Fashion Boutique</h5>
+                <p>Rajarampuri, Kolhapur, Maharashtra, India</p>
+                <p>📞 +91 9876543210</p>
+                <p>📧 queenfashion@gmail.com</p>
+
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.692787858434!2d74.2360962353411!3d16.693229245282723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1003e8dd18f77%3A0x8145dfbd008c138d!2sRajarampuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1781579190962!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-danger text-white text-center p-3">
+            <p>© 2026 Queen Fashion | All Rights Reserved</p>
+        </footer>
+
+
+</body>
+
+</html>
